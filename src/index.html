@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular QuickStart</title>
+    <title>Angular 2 Demo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
+    <script src="dist/globals.js"></script>
     <script src="node_modules/core-js/client/shim.min.js"></script>
-
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-
     <script src="systemjs.config.js"></script>
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
   </head>
-
-  <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+  <body style="background-image: url('content/img/lighten-sm-d.jpg')">
+    <div class="container">
+      <nav class="navbar navbar-light bg-faded">
+        <div class="top-line bg-primary"></div>
+        <a class="navbar-brand"><img src="content/img/science-logo.png" height="50px"/></a>
+        <div class="nav navbar-nav">
+          <a class="nav-item active nav-link" href="/">Home</a>
+        </div>
+      </nav>
+      <my-app></my-app>
+      <startor></startor>
+    </div>
   </body>
 </html>
