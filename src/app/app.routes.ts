@@ -5,6 +5,7 @@ import {MissionComponent} from "./mission/mission.component";
 
 const routes: Routes = [
     {path: 'home', component:MissionComponent},
+    {path: '', component:MissionComponent},
     {path: '**', component: PageNotFoundComponent},
 ];
 
